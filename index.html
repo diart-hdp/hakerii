@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Clock Digital</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="clock">
+            <h2>The time is now</h2>
+            <div id="time">
+                <div><span id="hour"></span><span>Hours</span></div>
+                <div><span id="minutes"></span><span>Minutes</span></div>
+                <div><span id="seconds"></span><span>Seconds</span></div>
+            </div>
+        </div>
+        <script>
+         
+    setInterval(clock, 500)
+
+    function clock(){
+        var time = new Date;
+        var hrs = time.getHours();
+        if(hrs < 12){
+            hrs = hrs - 12;
+        }
+        // kum haru be ropt ncnncnc  ib thu vetit programer prit se edhe ti ke ba gabime qetu
+        document.getElementById('hour').innerHTML = hrs;
+    }
+        </script>
+        <script>
+            setInterval(clockk, 500)
+
+function clockk(){
+    var time = new Date;
+    var min = time.getMinutes();
+
+
+    document.getElementById('minutes').innerHTML =min;
+}
+        </script>
+                <script>
+                    setInterval(clockkk, 500)
+        
+        function clockkk(){
+            var time = new Date;
+            var sec = time.getSeconds();
+         
+            document.getElementById('seconds').innerHTML =sec;
+        }
+                </script>
+    </body>
+</html>
+ 
