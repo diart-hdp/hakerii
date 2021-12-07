@@ -21,8 +21,8 @@
     function clock(){
         var time = new Date;
         var hrs = time.getHours();
-        if(hrs < 12){
-            hrs = hrs  12;
+        if(hrs > 12){
+            hrs = hrs - 12;
         }
         // kum haru be ropt ncnncnc  ib thu vetit programer prit se edhe ti ke ba gabime qetu
         document.getElementById('hour').innerHTML = hrs;
